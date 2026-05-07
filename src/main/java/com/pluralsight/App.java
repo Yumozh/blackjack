@@ -32,14 +32,22 @@ public class App {
         while(!(numberOfPlayers > 1) || !(numberOfPlayers < 7)) {
             if (scan.hasNextByte()) {
                 numberOfPlayers = scan.nextByte();
+                scan.nextLine();
 
                 if (numberOfPlayers > 7 || numberOfPlayers < 1) {
                     System.out.println("Invalid entry. Please choose between 1 and 7.");
                 }
             }
         }
-
         System.out.println("Great! You`ve got game for " + numberOfPlayers + " players today!");
+
+        for(int i = 1; i <= numberOfPlayers; i++) {
+            System.out.println("Enter a player #" + i + " name");
+            String name = scan.nextLine();
+
+            playersList.add(new Player(name));
+        }
+        System.out.println("All players are added now!");
 
     }
 
