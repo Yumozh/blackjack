@@ -38,7 +38,16 @@ public class Card {
             // A = 11
             // K, Q, J = 10
             // all numeric cards are equal to their face value
-            return -1;
+            switch (value){
+                case "A":
+                    return 11;
+                case "K":
+                case "Q":
+                case "J":
+                    return 10;
+                default:
+                    return Integer.parseInt(value);
+            }
         } else {
             return 0;
         }

@@ -11,6 +11,13 @@ public class Player {
         this.hand = new Hand();
     }
 
+    public Hand getHand() {
+        return hand;
+    }
+    public String getName(){
+        return name;
+    }
+
     public void receiveCard(Card card){
         
     }
