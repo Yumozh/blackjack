@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-//        Deck deck = new Deck();
 //        Hand hand1 = new Hand();
 //        // deal 5 cards
 //        for(int i = 0; i < 5; i++) {
@@ -50,7 +49,8 @@ public class App {
         System.out.println("All players are added now!");
 
     }
+    //Create a deck
+    Deck deck = new Deck();
 
-    //Ask for a number of players. Create a Player class. Add each player to array list. One String with all names with comma saparated
-    //split into fields. Split method,
+
 }
